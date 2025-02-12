@@ -1,9 +1,15 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Calendar APP
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# 10-calendar-app
+
+
+## Development steps
+
+1. Rename file .env.template for .env
+2. Make the respectives changes in the environment variables.
+
+```
+VITE_API_URL=http://localhost:4000/api
+
+```
