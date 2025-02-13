@@ -9,10 +9,10 @@ const loginFormFields = {
 }
 
 const registerFormFields = {
-    registerName: 'Lucas',
-    registerEmail: 'lucas@gmail.com',
-    registerPassword: '123456',
-    registerPassword2: '123456',
+    registerName: '',
+    registerEmail: '',
+    registerPassword: '',
+    registerPassword2: '',
 }
 
 export const LoginPage = () => {
