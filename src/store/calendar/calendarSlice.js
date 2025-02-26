@@ -37,7 +37,6 @@ export const calendarSlice = createSlice({
                 if (event.id === payload.id) {
                     return payload;
                 }
-
                 return event;
             });
         },

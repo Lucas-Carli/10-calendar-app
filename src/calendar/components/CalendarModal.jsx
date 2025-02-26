@@ -11,6 +11,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 // registerLocale('es', es)
 import { useCalendarStore, useUiStore } from '../../hooks';
+import { getEnvVariables } from '../../helpers';
 
 const customStyles = {
     content: {
@@ -23,7 +24,9 @@ const customStyles = {
     },
 };
 
-Modal.setAppElement('#root');
+if (getEnvVariables().VITE_MODE !== 'test') {
+    Modal.setAppElement('#root');
+}
 
 export const CalendarModal = () => {
 
@@ -76,7 +79,7 @@ export const CalendarModal = () => {
         closeDateModal();
     }
 
-    const onSubmit = async(event) => {
+    const onSubmit = async (event) => {
         event.preventDefault();
         setFormSubmitted(true);
 
@@ -93,7 +96,7 @@ export const CalendarModal = () => {
         console.log(formValues);
 
         // TODO:
-        await startSavingEvent( formValues );
+        await startSavingEvent(formValues);
         closeDateModal();
 
     }

@@ -7,14 +7,14 @@ export const FabDelete = () => {
 
     const handleDelete = () => {
         startDeletingEvent();
-
     }
 
     return (
         <button
+            aria-label="btn-delete"
             className="btn btn-danger fab-danger"
             onClick={handleDelete}
-            style= {{
+            style={{
                 display: hasEventSelected ? '' : 'none'
             }}
         >
